@@ -40,9 +40,6 @@ class UsersController < ApplicationController
 	# DELETE /users/:id
 	# TODO: add an active flag to users. deleting data is bad.
 	def destroy 
-		respond_with( {:error => 'This feature is not yet support' } ) do |format|
-			format.xml {render(:xml => resources, :status => 400)}
-			format.json {render(:json => resources, :status => 400)}
-		end
+		respond_with( {:error => 'This feature is not yet supported' }, :status => 404 )
 	end
 end

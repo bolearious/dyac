@@ -7,4 +7,8 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 # our first users! Mr & Mrs Test!
-User.create([{first_name: 'Mr', last_name: 'Test'},{first_name: 'Mrs', last_name: 'Test'}])
+users = User.create([{first_name: 'Mr', last_name: 'Test'},{first_name: 'Mrs', last_name: 'Test'}])
+user = users.first
+user.custom_words.create( [{word: 'fubar', correct: false},{word: 'donbar', correct: true}] )
+fubar = user.custom_words.first
+fubar.corrections.create( [{replacement: 'foobar'},{replacement: 'fobar'},{replacement: 'foobar'}] )

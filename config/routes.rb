@@ -29,6 +29,8 @@ Dyac::Application.routes.draw do
 	resources :users do
 		resources :spellings
 	end
+	
+	resources :spellings
 
   # Sample resource route with more complex sub-resources
   #   resources :products do
