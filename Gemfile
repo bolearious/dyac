@@ -39,3 +39,7 @@ gem 'jquery-rails'
 
 # Use Thin for a ruby server
 gem 'thin', '1.3.1'
+
+# Spellcheck gem
+gem 'spellchecker'
+

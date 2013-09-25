@@ -1,0 +1,2 @@
+class SpellingsController < ApplicationController
+end
